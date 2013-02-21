@@ -1,0 +1,197 @@
+/*************************
+Navbar
+*************************/
+
+
+#navbar_div {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	height: 150px;
+	background-image: url('../images/hr.gif');
+	background-repeat: repeat-x;
+	background-position: center center;
+	background-color: #ffffff;
+	white-space:nowrap;
+	text-align: center;
+
+}
+
+/*************************
+Name
+*************************/
+
+#name {
+	display: inline-block;
+	position: absolute;
+	margin: 53px 0px 58px 0px;
+	padding: 0px 0px 0px 5px;
+	width: 399px;
+	left: 0px;
+	background color: #000000;
+}
+
+#name a {
+	position: relative;
+	margin: 53px;
+	padding: 0px 10px;
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 39px;
+	font-family: ProximaNova-Regular, sans-serif;
+	text-decoration: none;
+}
+
+
+a.namelink + img {
+	position: absolute;
+	left: 6px;
+	top: 21px;
+	opacity: 0;
+    transition: opacity .5s cubic-bezier(0, .5, 1, 1);
+    -moz-transition: opacity .5s cubic-bezier(0, .5, 1, 1);
+    -webkit-transition: opacity .5s cubic-bezier(0, .3, 1, 1);
+}
+
+a.namelink ~ img ~ img {
+	position: absolute;
+	left: 350px;
+	top: 21px;
+	opacity: 0;
+    transition: opacity .5s cubic-bezier(0, .5, 1, 1);
+    -moz-transition: opacity .5s cubic-bezier(0, .5, 1, 1);
+    -webkit-transition: opacity .5s cubic-bezier(0, .3, 1, 1);
+}
+
+a.namelink:hover ~ img {
+	opacity: 1.0;
+}
+
+/*************************
+Nav buttons
+*************************/
+
+.nav {
+	display: inline-block;
+	position: relative;
+	margin: 0px auto;
+	width: 1000px;
+	height: 150px;
+	background-image: url('../images/hr.gif');
+	background-repeat: repeat-x;
+	background-position: center center;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.navbutton a {
+	display: inline-block;
+	position: relative;	
+	padding: 0px 7px;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: ProximaNova-Regular, sans-serif;
+	font-size: 27px;
+	text-decoration: none;
+}
+
+.navbutton {
+	display: inline-block;
+	position: relative;
+	margin: auto 0px;
+	padding: 0px;
+	top: 62px;
+	width: 24.5%;
+	background-color: none;
+
+}
+
+.navbutton img {
+	position: absolute;
+	opacity: 0;
+	transition: opacity .5s cubic-bezier(0, .5, 1, 1);
+    -moz-transition: opacity .5s cubic-bezier(0, .5, 1, 1);
+    -webkit-transition: opacity .5s cubic-bezier(0, .3, 1, 1);
+}
+
+.navbutton:nth-child(1) a + img {
+	left: 27px;
+	top: 12px;
+}
+
+.navbutton:nth-child(1) a + img + img {
+	left: 165px;
+	top: 12px;
+}
+
+.navbutton:nth-child(2) a + img {
+	left: 27px;
+	top: 12px;
+}
+
+.navbutton:nth-child(2) a + img + img {
+	left: 165px;
+	top: 12px;
+}
+
+.navbutton:nth-child(3) a + img {
+	left: 40px;
+	top: 12px;
+}
+
+.navbutton:nth-child(3) a + img + img {
+	left: 152px;
+	top: 12px;
+}
+
+.navbutton:nth-child(4) a + img {
+	left: 17px;
+	top: 12px;
+}
+
+.navbutton:nth-child(4) a + img + img {
+	left: 175px;
+	top: 12px;
+}
+
+.navbutton a:hover ~ img{
+	opacity: 1;
+}
+
+/*************************
+Content
+*************************/
+
+#content {
+	position: relative;
+	margin: 0px auto;
+	width: 1000px;
+	background-color: none;
+
+}
+
+#textwrapper {
+	padding: 25px;
+}
+
+
+#content p {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: ProximaNova-Regular, sans-serif;
+	font-size: 49px;
+	text-decoration: none;
+	text-align: justify;
+	letter-spacing:-1px;
+	text-indent: 40px;
+    -webkit-hyphens: manual;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+	line-height:120%
+}
+
+#textwrapper p:first-child {
+	text-indent: 0px;
+}
