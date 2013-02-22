@@ -1,0 +1,77 @@
+/*************************
+Navbar
+*************************/
+
+#navbar_div {
+	top: -150px;
+	transition: top 1s ease-out;
+    -moz-transition: top 1s ease-out;
+    -webkit-transition: top 1.1s ease-out;
+}
+
+/*************************
+Content
+*************************/
+
+#content {
+	position: relative;
+	margin: 0px auto;
+	width: 1000px;
+	background-color: none;
+	text-align: center;
+}
+
+#textwrapper {
+	padding: 25px;
+}
+
+#content p {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: ProximaNova-Regular, sans-serif;
+	font-size: 49px;
+	text-decoration: none;
+	text-align: justify;
+	letter-spacing:-1px;
+	text-indent: 40px;
+    -webkit-hyphens: manual;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+	line-height:120%
+}
+
+#textwrapper p:first-child {
+	text-indent: 0px;
+}
+
+#go {
+	position: relative;
+	color: #000000;
+	top: 50px;
+	text-indent: 0px;
+	text-decoration: none;
+	font-family: ProximaNova-Regular, sans-serif;
+	font-size: 49px;
+}
+
+#go + div {
+	position: relative;
+	background-color: #ffffff;
+	margin: 0px auto;
+	bottom: 25px;
+	width: 100px;
+	height: 100px;
+	z-index: -1;
+	-webkit-transition: -webkit-transform 1s, background-color 1s ease-out;
+	-moz-transition: -moz-transform 1s, background-color 1s ease-out;
+	}
+
+#go:hover + div {
+	background-color: #ff8314;
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
