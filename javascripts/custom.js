@@ -1,20 +1,41 @@
 $(document).ready(function () {
 	$('body').hide().fadeIn(1000);
+		$('.navbutton a').click(function () {
+			$('body').fadeOut(200);
+	});
 });
  
 $(document).ready(function () {
-
 	$('#go').click(function () {
-		$('#navbar_div').css('top','0px');
+		$('#textwrapper p').fadeOut(800);
+		$('#gocircle').fadeOut(800);
 		$(this).fadeOut(900);
-		$('#gocircle').css({'background-color':'#ffffff'});
+		var href = $(this).attr('href');
+		setTimeout(function() {window.location = href}, 1000);
+        return false;
 	});
 	
 });
 
 
-
 	/*	
+	
+$(document).ready(function () {
+	$('#twitter_link').hover(
+	function () {
+			$('h5 + img + img').fadeTo(300, 0);
+	},
+	function () {
+			$('h5 + img + img').fadeTo(300, 1);
+	}
+	
+	
+	);
+
+});
+
+	
+	
 	
 	
 	$(document).ready(function() {

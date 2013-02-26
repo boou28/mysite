@@ -1,0 +1,121 @@
+/*************************
+Navbar
+*************************/
+
+#navbar_div {
+	top: 0px;
+	transition: top 1s ease-out;
+    -moz-transition: top 1s ease-out;
+    -webkit-transition: top 1.1s ease-out;
+}
+
+/*************************
+Content
+*************************/
+
+
+#content {
+	margin: 11px auto 0px auto;
+	width: 1000px;
+	background-color: none;
+	text-align: center;
+}
+
+#home {
+	width: 950px;
+	background-color: none;
+	margin: 0px auto;
+}
+
+hr {
+	border: 0;
+	padding: 0px;
+	margin: 0px auto;
+	height: 1px;
+	width: 950px;
+	color: #000000;
+	background-color: #000000;
+}
+ 
+ h1 {
+	display: inline-block;
+	float: left;
+	margin: 0px 0px 16px 2px;
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 49px;
+	color: #000000;
+ }
+ 
+ h2 {
+	display: inline-block;
+	float: right;
+	margin: 25px 2px 0px 0px;
+	font-family: "ProximaNova-Regular", sans-serif;
+	font-size: 25px;
+	color: #a6a6a6;
+ }
+ 
+#left {
+	float: left;
+	width: 720px;
+	margin: 18px 0px 0px 0px;
+	text-align: justify;
+}
+
+#left h3 {
+	display: inline-block;
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 38px;
+	margin: 0px 10px 12px 30px;
+	
+}
+
+#left h4 {
+	display: inline-block;
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 15px;
+	color: #7f7f7f;
+}
+ 
+ #left p {
+ 	font-family: "Lato", sans-serif;
+	font-size: 19px;
+	line-height: 26px;
+}
+ 
+ #right {
+	position: relative;
+	width: 210px;
+	height: 480px;
+	float: right;
+	margin-top: 15px;
+
+}
+
+#twitter_link {
+	text-decoration: none;
+	color: #000000;
+}
+
+h5 {
+	display: inline-block;
+	position: relative;
+	font-family: "Open Sans Light", sans-serif;
+	font-size: 28px;
+}
+
+h5 ~ img {
+	display: inline-block;
+	position: relative;
+	width:36px;
+	height:36px;
+	top: 10px;
+	left: 0px;
+	background:url('../images/twitter.png') no-repeat -37px 0;
+
+}
+
+
+#twitter_link:hover > img {
+	background:url('../images/twitter.png') no-repeat 0px 0;
+}

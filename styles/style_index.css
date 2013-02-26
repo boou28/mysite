@@ -1,27 +1,21 @@
-/*************************
-Navbar
-*************************/
-
 #navbar_div {
-	top: -150px;
-	transition: top 1s ease-out;
-    -moz-transition: top 1s ease-out;
-    -webkit-transition: top 1.1s ease-out;
+	display: none;
 }
-
 /*************************
 Content
 *************************/
 
 #content {
 	position: relative;
-	margin: 0px auto;
+	margin: auto auto;
 	width: 1000px;
+	top: 75px;
 	background-color: none;
 	text-align: center;
 }
 
 #textwrapper {
+	position: relative;
 	padding: 25px;
 }
 
@@ -39,10 +33,10 @@ Content
     -ms-hyphens: auto;
     -o-hyphens: auto;
     hyphens: auto;
-	line-height:120%
+	line-height:120%;
 }
 
-#textwrapper p:first-child {
+#textwrapper p:first-child, #textwrapper p:nth-child(3) {
 	text-indent: 0px;
 }
 
@@ -66,7 +60,7 @@ Content
 	z-index: -1;
 	-webkit-transition: -webkit-transform 1s, background-color 1s ease-out;
 	-moz-transition: -moz-transform 1s, background-color 1s ease-out;
-	}
+}
 
 #go:hover + div {
 	background-color: #ff8314;
@@ -75,3 +69,4 @@ Content
 	-o-transform: rotate(360deg);
 	transform: rotate(360deg);
 }
+
